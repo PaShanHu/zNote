@@ -80,6 +80,7 @@ header{
 			}
 			.search{
 				padding: 0 0.4rem;
+				margin: 0 0.6rem;
 				background-color: @green;
 				height: 1.6rem;
 				input{
@@ -90,6 +91,10 @@ header{
 					color: #fff;
 					font-family: '微软雅黑';
 					width: 4.8rem;
+					&::-webkit-input-placeholder {
+					    color: #ddd;
+					    line-height: 1;
+					}
 				}
 			}
 		}
