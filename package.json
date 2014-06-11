@@ -1,0 +1,15 @@
+{
+	"name": "eNote Book",
+	"version": "0.0.1",
+	"main": "index.html",
+	"window": {
+		"icon": "ico.png",
+		"position": "center",
+		"toolbar": true,
+		"frame": true,
+		"min_width": 850,
+		"min_height": 600,
+		"width": 1200,
+		"height": 700
+	}
+}

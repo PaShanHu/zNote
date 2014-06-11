@@ -1,0 +1,85 @@
+@pageColor: #dadecb;
+@bgColor: #f2f2f2;
+@lightGray: #999;
+@green: #494;
+
+@font-face {
+	font-family: 'graphik';
+	src:url('../fonts/Graphik-Regular-Web.woff') format('woff');
+}
+@font-face {
+	font-family: 'graphikLight';
+	src:url('../fonts/Graphik-Light-Web.woff') format('woff');
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.borderBox{
+	width: 100%;
+	box-sizing:border-box;
+	display: block;
+}
+html{
+	width: 100%;
+	font-size: 20px;
+}
+body{
+	width: 100%;
+	background-color: @bgColor;
+	-webkit-user-select: none;
+	-webkit-app-region: drag;
+}
+header{
+	//padding: 0 0.6rem;
+	#top-bar{
+		.left{
+			padding-left: 0.8rem;
+			h1{
+				font-family: 'graphik','微软雅黑';
+				font-weight: normal;
+				font-size: 1rem;
+				color: #494;
+			}
+		}
+		.right{
+			float: right;
+			overflow: hidden;
+			font-family: 'graphikLight';
+			.part{
+				float: left;
+			}
+			.user-info{
+				font-size: 0.6rem;
+				div.part{
+					&.analysis{
+						span{
+							display: inline-block;
+							padding: 0 0.2rem;
+							b{
+								font-weight: normal;
+								font-family: 'courier';
+								padding-right: 0.2rem;
+								color: @green;
+							}
+						}
+					}
+					&.head-img{
+						padding: 0 0.2rem;
+						img{
+							width: 1.6rem;
+						}
+					}
+					&.name{
+						p{
+							font-family: 'graphik';
+							font-size: 0.8rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
